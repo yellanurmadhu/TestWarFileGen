@@ -5,17 +5,17 @@ stage('SCM Checkout')
 git 'https://github.com/yellanurmadhu/TestWarFileGen.git'
 }
 
-Stage('Test')
+stage('Test')
 {
 sh 'mvn test'
 }
 
-Stage('Compile')
+stage('Compile')
 {
 sh 'mvn compile'
 }
 
-Stage('Compile-Package')
+stage('Compile-Package')
 {
 sh 'mvn package'
 
