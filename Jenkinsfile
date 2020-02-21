@@ -1,7 +1,5 @@
 node
 {
-stages
-{
 stage('SCM Checkout')
 {
 git 'https://github.com/yellanurmadhu/TestWarFileGen.git'
@@ -20,6 +18,6 @@ sh 'mvn compile'
 Stage('Compile-Package')
 {
 sh 'mvn package'
-}
+
 }
 }
