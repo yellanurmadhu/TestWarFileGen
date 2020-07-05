@@ -11,7 +11,7 @@ sh 'mvn test compile package'
 }
 stage('Build Docker Image'){
      sh 'docker build -t yellanurmadhu/lab .'
-     sh 'docker service create --name server2 nginx
+     sh 'docker service create --name server2 nginx'
    }
 }
 
