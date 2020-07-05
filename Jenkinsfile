@@ -11,7 +11,7 @@ sh 'mvn test compile package'
 }
 stage('Build Docker Image'){
      sh 'docker build -t yellanurmadhu/lab .'
-     sh 'docker run --rm -dit --name "server1" --hostname "Server1" -p 8001:80 yellanurmadhu/lab'
+     sh 'docker service create --name server2 nginx
    }
 }
 
