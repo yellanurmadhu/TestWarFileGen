@@ -7,19 +7,9 @@ git 'https://github.com/yellanurmadhu/TestWarFileGen.git'
 
 stage('Test')
 {
-sh 'mvn test'
+sh 'mvn test compile package'
 }
 
-stage('Compile')
-{
-sh 'mvn compile'
-}
-
-stage('Compile-Package')
-{
-sh 'mvn package'
-
-}
   stage('Build Docker Image'){
      sh 'docker build -t yellanurmadhu/lab .'
    }
