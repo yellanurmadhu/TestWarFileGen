@@ -1,5 +1,5 @@
 From ubuntu
 
-RUN apt-get update
-RUN apt-get install -y wget tomcat
+#RUN apt-get update
+#RUN apt-get install -y wget tomcat
 
