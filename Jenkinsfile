@@ -12,7 +12,7 @@ node
 		stage('Build Docker Image')
 			{
 			    
-				sh 'docker build -t yellanurmadhu/lab ${BUILD_NUMBER}.'			
+				sh 'docker build -t yellanurmadhu/lab :${BUILD_NUMBER}.'			
 				sh 'docker run -dit --name tomcat_container -p 8001:8080 yellanurmadhu/lab:${BUILD_NUMBER}'
 								
 			}
